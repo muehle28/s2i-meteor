@@ -17,7 +17,7 @@ LABEL io.k8s.description="Platform for building meteor apps" \
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | /bin/sh
 
 # Install required packages here:
-RUN yum install -y nodejs-8.11.2 npm-5.6.0 && yum clean all -y
+RUN yum install -y nodejs-8.11.3 npm-5.10.0 && yum clean all -y
 
 # This default user is created in the openshift/base-centos7 image
 USER 1001

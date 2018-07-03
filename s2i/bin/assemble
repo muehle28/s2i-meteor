@@ -29,6 +29,11 @@ echo "---> Building application from source..."
 cd /tmp/src/
 /usr/bin/npm install
 $HOME/.meteor/meteor build --directory /tmp/bundle-dir
+cd /tmp/bundle-dir
+ls
 
-mkdir -p $HOME/built_app
-tar xvf /tmp/bundle-dir/*.tar.gz -C $HOME/built_app
+
+#mkdir -p $HOME/built_app
+#tar xvf /tmp/bundle-dir/*.tar.gz -C $HOME/built_app
+mv /tmp/bundle-dir/bundle $HOME/built_app
+cd $HOME/built_app/programs/server && npm install

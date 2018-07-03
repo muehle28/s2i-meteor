@@ -31,4 +31,4 @@ cd /tmp/src/
 $HOME/.meteor/meteor build --directory /tmp/bundle-dir
 
 mkdir -p $HOME/built_app
-tar xvf /tmp/bundle-dir/orderapp.tar.gz -C $HOME/built_app
+tar xvf /tmp/bundle-dir/*.tar.gz -C $HOME/built_app

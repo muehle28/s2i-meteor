@@ -27,8 +27,8 @@ echo "---> Building application from source..."
 # TODO: Add build steps for your application, eg npm install, bundle install
 
 cd /tmp/src/
-/usr/bin/npm install
+/usr/bin/npm install --no-optional
 $HOME/.meteor/meteor build --directory /tmp/bundle-dir
 
 mv /tmp/bundle-dir/bundle $HOME/built_app
-cd $HOME/built_app/programs/server && npm install
+cd $HOME/built_app/programs/server && npm install --no-optional

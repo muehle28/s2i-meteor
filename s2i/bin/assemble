@@ -31,4 +31,4 @@ cd /tmp/src/
 $HOME/.meteor/meteor build --directory /tmp/bundle-dir
 
 mv /tmp/bundle-dir/bundle $HOME/built_app
-cd $HOME/built_app/programs/server && npm install
+cd $HOME/built_app/programs/server && npm install --production
